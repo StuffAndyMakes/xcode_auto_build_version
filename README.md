@@ -25,3 +25,16 @@ The above code isn't meant to be in a script (it could, of course, then you coul
 - Copy the shell code above and paste it into the edit field with the line numbers in it, just below the "Shell" field.
 - Speaking of Shell field... I change the value of that field to "/bin/zsh" in my projects, since that's now the default shell in macOS.
 
+## Change it for your own needs
+
+You can change the name of the header file simply by changing the filename on this line:
+
+`HFN=$SRCROOT/$PROJECT_NAME/build_version.h`
+
+...maybe to something like:
+
+`HFN=$SRCROOT/$PROJECT_NAME/latest_build_version.h`
+
+If you want the header file to sit in the folder with your source code, don't mess with the `$SRCROOT` or `$PROJECT_NAME` values on that line.
+
+If you want more than the dd/mm/yyyy in the `BUILD_DATE` value, `man date` at the command line to see your date/time formatting options.
