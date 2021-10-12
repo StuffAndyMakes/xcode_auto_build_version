@@ -1,4 +1,4 @@
-# xcode_auto_build_version
+# Automatically Update a Build Number and Date in a C Header File on Build
 
 This is a snippet of shell code for use in a Run Script Build Phase in an Xcode project that creates/updates a C header file with preprocessor #define values for a build number and build date, both of which are updated every time you build your target.
 
